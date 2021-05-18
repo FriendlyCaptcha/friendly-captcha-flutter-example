@@ -48,8 +48,9 @@ class _MyHomePageState extends State<MyHomePage> {
           fontSize: 16.0
       );
     } else {
-      // In a real application we would send the captcha solution to our server for verification
-      // In this demo app we show the string we would sent to the server (along with data that makes sense for your application)
+      // In a real application we would send the captcha solution to our server
+      // for verification (along with data that makes sense for your application).
+      // In this demo app we show the string we would send to the server in a Toast.
       Fluttertoast.showToast(
           msg: "You completed the captcha, now it should be verified.\n\nYour solution was: " + widget.captchaSolution,
           toastLength: Toast.LENGTH_SHORT,
